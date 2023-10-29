@@ -1,0 +1,1 @@
+# szymonadamowicz.github.io
