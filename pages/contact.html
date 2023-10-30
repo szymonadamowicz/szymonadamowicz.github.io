@@ -23,24 +23,16 @@
             <a href="./projects.html">Project</a>
         </nav>
     </header>
-
-    <section class="home">
-        
-        <div class="home-content">
-            
-            <h1>Hello, I'am Szymon Adamowicz</h1>
-            <h3>Frontend Developer</h3>
-            <p>Hi, I am Szymon, first-year student of Computer Science at the University of Gdańsk. Currently I am a Junior Front-end Developer on a freelance project for commercial entrepreneur. I work on a progressive web application designed to educate and assist newcomers in entering the IT industry.</p>
-            <div class="home-sci">
-                <a href="#"><i class='bx bxl-gmail'></i></a>
-                <a href="#"><i class='bx bxs-phone'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
-            </div>
-            <a href="#" class="btn">Download CV</a>
-        </div>
-
-    </section>
-
+        <form action="https://formsubmit.co/adamowiczszymon8@gmail.com" method="post">
+            <input type="text" name="name" placeholder="Your Name" required>  
+            <input type="email" name="email" placeholder="Email" required>  
+            <input type="text" name="phone" placeholder="Your Phone number" required>  
+            <textarea rows="6" name="message" placeholder="Enter your text here" maxlength = "200" required></textarea>
+        <label>
+            <a href="../imgs/privacypolicy.pdf" target="_blank">Privacy policy</a>
+            <input type="checkbox" name="consent" required>
+        </label>
+        <button type="submit">Send</button>
+        </form>
 </body>
 </html>

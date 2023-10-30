@@ -122,3 +122,63 @@ body {
     box-shadow: 0 0 10px white;
     order: 2;
 }
+
+
+form {
+    flex-direction: column;
+    box-shadow: 0 0 10px white;
+    align-items: center;
+    background-color: #07004D;
+    justify-content: center; 
+    display:flex;
+    flex-direction: column;
+    padding: 40px 60px;
+    width: 400px;
+    max-width: 100%;
+    height: 500px;
+    border-radius: 10px;
+}
+
+form input, form textarea {
+    border: 0;
+    margin: 10px 0;
+    padding: 20px;
+    background: white;
+    font-size: 16px;
+    resize: none;
+    width: 100%;
+}
+
+form button {
+    padding: 15px;
+    font-size: 18px;
+    width: 150px;
+    background: #07004D;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 10px;
+    border-radius: 40px;
+    transition: 0.5s; 
+}
+
+form button:hover {
+    box-shadow: none
+}
+
+
+form label {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    text-align: center;
+}
+
+.terms-label input[type="checkbox"] {
+    margin-left: 80px;
+    width: 10px;
+    height: 10px;
+    border: none;
+}
+
+.terms-label a {
+    color: white;
+}
