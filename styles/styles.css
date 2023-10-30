@@ -41,7 +41,7 @@ body {
 }
 
 .home {
-    margin-top: 100px; /* Adjust the margin-top to create space for the header */
+    margin-top: 100px; 
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -198,4 +198,50 @@ form label {
 .terms-label a:active {
     color: #ffff;
     text-decoration: none;
+}
+h3 {
+    color: #2D82B7;
+}
+
+.flex-container {
+    display: flex;
+    margin-top: 100px; 
+    align-items: center;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.flex-box {
+    padding: 5px;
+    height: 200px;
+    width: 700px;
+    background: #07004D;
+    color: white;
+    border: 1px solid white;
+    box-shadow: 0 0 10px;
+    text-align: center;
+    border-radius: 20px;
+    margin: 10px;
+}
+.container {
+    font-size: 30px;
+    color: #2D82B7;
+    -webkit-text-stroke: 0.5px #ffff;
+    text-decoration: none;
+
+}
+.container:hover{
+
+    color: white;
+}
+.container:active{
+    color: white;
+}
+p {
+    padding: 15px;
+}
+.tech{
+    font-style: italic;
 }
