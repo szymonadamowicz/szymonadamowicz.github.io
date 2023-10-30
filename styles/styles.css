@@ -3,7 +3,6 @@
 * {
     margin: 0;
     padding: 0;
-    box-sizing: border-box;
     font-family: 'Poppins', sans-serif;
 }
 
@@ -22,7 +21,7 @@
 
 .navbar a {
     font-size: 18px;
-    color:aliceblue;
+    color:white ;
     text-decoration: none;
     font-weight: 500;
     margin-left: 30px;
@@ -31,24 +30,17 @@
 
 .navbar a:hover,
 .navbar a.active {
-    color: aqua;
+    color: #310100;
 
 }
 
 .home {
     height: 100vh;
-    background: linear-gradient(90deg, purple 30%, brown 70%);
+    background: linear-gradient(90deg, #7B474F 30%, #310100 70%);
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 10%;    
-}
-
-.home-image {
-    width: 400px;
-    height: 400px;
-    background: green;
-    order: 2;
 }
 
 .home-content {
@@ -66,6 +58,57 @@
 
 .home-content h3 {
     font-size: 30px;
-    color: blueviolet;
+    color: #310100;
     -webkit-text-stroke: .5px #ffff;
+}
+
+.home-content p {
+    font-size: 15px;
+    margin-top: 20px;
+}
+.home-sci {
+    margin: 15px -10px 40px;
+}
+.home-sci a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    background: transparent;
+    border: 2px solid #310100;
+    border-radius: 50%;
+    font-size: 20px;
+    color: #310100;
+    text-decoration: none;
+    margin-left: 12px;
+    transition: 0.4s;
+}
+
+.home-sci a:hover {
+    background: #310100;
+    color: white;
+    border-color: white;
+    box-shadow: 0 0 10px;
+}
+
+.btn {
+    padding: 12px 35px;
+    background: #310100;
+    border-radius: 40px;
+    font-size: 15px;
+    color: white;
+    text-decoration: none;
+    font-weight: 500;
+    letter-spacing: 1px;
+    box-shadow: 0 0 10px white;
+    transition: 0.4s;
+}
+
+.btn:hover {
+    box-shadow: none;
+}
+
+.cv {
+    overflow: hidden;
 }
