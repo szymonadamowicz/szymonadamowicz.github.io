@@ -29,19 +29,52 @@
         <img class="cv" src="./imgs/Szymon_Adamowicz.jpg">
         <div class="home-content">
             
-            <h1>Hello, I'am Szymon Adamowicz</h1>
-            <h3>Frontend Developer</h3>
-            <p>Hi, I am Szymon, first-year student of Computer Science at the University of Gdańsk. Currently I am a Junior Front-end Developer on a freelance project for commercial entrepreneur. I work on a progressive web application designed to educate and assist newcomers in entering the IT industry.</p>
+            <h1>Hello, I'm Szymon Adamowicz</h1>
+            <h3>Front-end Developer</h3>
+            <p>Hi, my name is Szymon and I'm a first-year student of Computer Science at the University of Gdańsk. Currently, I am a Junior Front-end Developer working on a freelance project for a commercial entrepreneur. I have a solid foundations in creating websites using HTML, CSS (Tailwind, Bootstrap, Materialize) and JavaScript (React, Typescript, Next.js).</p>
             <div class="home-sci">
-                <a href="#"><i class='bx bxl-gmail'></i></a>
-                <a href="#"><i class='bx bxs-phone'></i></a>
-                <a href="#"><i class='bx bxl-github' ></i></a>
-                <a href="#"><i class='bx bxl-linkedin' ></i></a>
+                <a href="#" id="emailIcon" data-value="adamowiczszymon8@gmail.com"><i class='bx bxl-gmail'></i></a>
+                <a href="#" id="phoneIcon" data-value="506389558"><i class='bx bxs-phone'></i></a>                
+                <a href="https://github.com/szymonadamowicz" target="_blank"><i class='bx bxl-github' ></i></a>
+                <a href="https://www.linkedin.com/in/szymonadamowicz/" target="_blank"><i class='bx bxl-linkedin' ></i></a>
             </div>
-            <a href="#" class="btn">Download CV</a>
+            <a href="./imgs/Szymon_Adamowicz.pdf" download class="btn">Download CV</a>
         </div>
 
     </section>
+    
+    <div id="popupMessage">Copied!</div>
 
+    <script>
+        function copyToClipboard(elementId) {
+            var element = document.getElementById(elementId);
+            var text = element.getAttribute("data-value"); 
+            var tempInput = document.createElement("input");
+            document.body.appendChild(tempInput);
+            tempInput.setAttribute("value", text);
+            tempInput.select();
+            document.execCommand("copy");
+            document.body.removeChild(tempInput);
+            showPopupMessage(event.clientX, event.clientY);
+        }
+        function showPopupMessage(cursorX, cursorY) {
+                var popupMessage = document.getElementById("popupMessage");
+                popupMessage.style.top = cursorY + 10 + "px"; 
+                popupMessage.style.left = cursorX + 10 + "px"; 
+                popupMessage.style.display = "block";
+
+                setTimeout(function () {
+                    popupMessage.style.display = "none";
+                }, 2000);
+            }
+
+        document.getElementById("emailIcon").addEventListener("click", function () {
+            copyToClipboard("emailIcon");
+        });
+
+        document.getElementById("phoneIcon").addEventListener("click", function () {
+            copyToClipboard("phoneIcon");
+        });
+    </script>
 </body>
 </html>

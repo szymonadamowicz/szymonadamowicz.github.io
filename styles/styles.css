@@ -38,6 +38,8 @@
 body {
     background: linear-gradient(90deg, #2D82B7, #BCEDF6);
     background-size: cover;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
 }
 
 .home {
@@ -125,6 +127,7 @@ body {
 
 
 form {    
+    transition: 0.3s;
     position: relative;
     margin: auto;
     top: 0;
@@ -204,6 +207,7 @@ h3 {
 }
 
 .flex-container {
+    transition: 0.3s;
     display: flex;
     margin-top: 100px; 
     align-items: center;
@@ -240,8 +244,26 @@ h3 {
     color: white;
 }
 p {
-    padding: 15px;
+    padding: 15px 10%;
+    font-size: 15px;
 }
 .tech{
-    font-style: italic;
+    font-weight: 500;
 }
+
+#popupMessage {
+    display: none;
+    position: absolute;
+    background: #333;
+    color: #fff;
+    padding: 5px 10px;
+    border-radius: 5px;
+    font-size: 14px;
+    white-space: nowrap;
+}
+
+@media screen and (max-width: 400px) {
+    p {
+       font-size: 10px;
+    }
+  }
