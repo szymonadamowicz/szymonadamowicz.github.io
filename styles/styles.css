@@ -12,16 +12,18 @@
     left: 0;
     width: 100%;
     padding: 20px 10%;
-    background: transparent;
+    background: #07004D; /* Add a background color with some opacity */
+    border-bottom: 1px solid white;
+    box-shadow: 0 0 5px white;
     display: flex;
     justify-content: left;
     align-items: center;
-    /* z-index: 100; */
+    z-index: 1000; /* Set a high z-index to keep it on top */
 }
 
 .navbar a {
     font-size: 18px;
-    color:white ;
+    color: white;
     text-decoration: none;
     font-weight: 500;
     margin-left: 30px;
@@ -30,24 +32,26 @@
 
 .navbar a:hover,
 .navbar a.active {
-    color: #310100;
+    color: #2D82B7;
+}
 
+body {
+    background: linear-gradient(90deg, #2D82B7, #BCEDF6);
+    background-size: cover;
 }
 
 .home {
-    height: 100vh;
-    background: linear-gradient(90deg, #7B474F 30%, #310100 70%);
+    margin-top: 100px; /* Adjust the margin-top to create space for the header */
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 0 10%;    
+    padding: 0 10%;
 }
 
 .home-content {
-    order: 1;
-    max-width: 50%;
+    max-width: 100%;
     margin-right: 20px;
-    color:white;
+    color: white;
     text-align: left;
 }
 
@@ -58,17 +62,19 @@
 
 .home-content h3 {
     font-size: 30px;
-    color: #310100;
-    -webkit-text-stroke: .5px #ffff;
+    color: #07004D;
+    -webkit-text-stroke: 0.5px #ffff;
 }
 
 .home-content p {
     font-size: 15px;
     margin-top: 20px;
 }
+
 .home-sci {
     margin: 15px -10px 40px;
 }
+
 .home-sci a {
     display: inline-flex;
     justify-content: center;
@@ -76,17 +82,17 @@
     width: 40px;
     height: 40px;
     background: transparent;
-    border: 2px solid #310100;
+    border: 2px solid #07004D;
     border-radius: 50%;
     font-size: 20px;
-    color: #310100;
+    color: #07004D;
     text-decoration: none;
     margin-left: 12px;
     transition: 0.4s;
 }
 
 .home-sci a:hover {
-    background: #310100;
+    background: #07004D;
     color: white;
     border-color: white;
     box-shadow: 0 0 10px;
@@ -94,7 +100,7 @@
 
 .btn {
     padding: 12px 35px;
-    background: #310100;
+    background: #07004D;
     border-radius: 40px;
     font-size: 15px;
     color: white;
@@ -109,6 +115,10 @@
     box-shadow: none;
 }
 
-.cv {
-    overflow: hidden;
+.cv { /* Ustaw na pełną szerokość */
+    height: 600px; /* Automatyczna wysokość dla responsywności */
+    border-radius: 10px;
+    border: 3px solid white;
+    box-shadow: 0 0 10px white;
+    order: 2;
 }
