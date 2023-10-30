@@ -124,14 +124,20 @@ body {
 }
 
 
-form {
+form {    
+    position: relative;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    margin-top: 100px; 
+    display: flex;
     flex-direction: column;
     box-shadow: 0 0 10px white;
     align-items: center;
     background-color: #07004D;
     justify-content: center; 
-    display:flex;
-    flex-direction: column;
     padding: 40px 60px;
     width: 400px;
     max-width: 100%;
@@ -167,18 +173,29 @@ form button:hover {
 
 
 form label {
-    padding-top: 20px;
-    padding-bottom: 20px;
+    display: flex;
+    align-items: center;
+    padding: 20px 0;
     text-align: center;
+    
 }
 
 .terms-label input[type="checkbox"] {
-    margin-left: 80px;
-    width: 10px;
-    height: 10px;
-    border: none;
+    margin-left: 60px;
+    width: 20px;
+    height: 20px;
+    color: white; /* Set the color of the checkbox */
+    background-color: transparent; /* Set the background to transparent */
+    border: 1px solid white;
 }
 
+
 .terms-label a {
-    color: white;
+    color: #2D82B7;
+    text-decoration: none;
+}
+
+.terms-label a:active {
+    color: #ffff;
+    text-decoration: none;
 }
